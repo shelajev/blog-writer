@@ -29,6 +29,7 @@ git -C "$fixture/upstream" config user.name fixture
 git -C "$fixture/upstream" config user.email fixture@example.invalid
 mkdir -p "$fixture/upstream/.github" "$fixture/upstream/.tessl-plugin" "$fixture/upstream/skills/blog-writer"
 printf '{"name":"jbaruch/blog-writer","version":"1.0.0"}\n' > "$fixture/upstream/.tessl-plugin/plugin.json"
+cp "$fixture/upstream/.tessl-plugin/plugin.json" "$fixture/upstream/skills/blog-writer/catalog-source.json"
 for gate in install-python-gate lint-shell lint-python run-script-tests; do
   printf '#!/bin/sh\nexit 0\n' > "$fixture/upstream/.github/$gate.sh"
 done
