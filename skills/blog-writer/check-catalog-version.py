@@ -19,6 +19,8 @@ from pathlib import Path
 
 PLUGIN = "jbaruch/blog-writer"
 MANIFEST = Path(__file__).resolve().parents[2] / ".tessl-plugin/plugin.json"
+if not MANIFEST.is_file():
+    MANIFEST = Path(__file__).resolve().with_name("catalog-source.json")
 VERSION = re.compile(r"\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?")
 
 

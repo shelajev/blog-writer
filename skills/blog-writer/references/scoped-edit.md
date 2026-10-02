@@ -53,6 +53,9 @@ source-to-revision preservation and within/between-paragraph argument flow. Repa
 regression before describing the work as ready, including changes introduced by another
 review pass. Avoid repeated rewrites whose sole purpose is to change sentence counts.
 
+For public-facing work, execute `skills/blog-writer/references/fresh-reader.md`
+before delivery. A review-only assignment reports findings without editing.
+
 ## Return the result
 
 Return the requested draft, edit, or review in the requested medium. For review-only work,

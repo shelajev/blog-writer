@@ -679,6 +679,9 @@ Run the tightening pass. Re-read the draft sentence by sentence with fresh eyes:
 - The goal is to tighten without losing substance. A post that's 1,700 words of meat is
   better than 2,000 words with padding.
 
+Run `skills/blog-writer/references/fresh-reader.md` and resolve or disclose audience
+comprehension findings before delivery.
+
 **Checkpoint:** Write the first draft to `blog-draft-[slug].md` in the working directory.
 Tell the author the file is ready for review. Also display a summary in conversation with
 word count, placeholder counts by type, open questions, mechanical sweep state, manual
@@ -725,6 +728,8 @@ conversation — edit the file surgically.
 - If a change conflicts with the tone guide, flag it but defer to the author
 - When replacing placeholders with actual content, integrate smoothly — don't just drop
   in an image or code block without adjusting the surrounding prose
+- Re-run the fresh Gemini audience review after substantive revisions; give the
+  new call only the revised reader-visible material and audience prerequisites.
 - Re-run the tightening pass on any new or rewritten sections — additions tend to
   introduce redundancy with existing content
 - Re-run structural audits 3, 4, and 5 on new or rewritten sections. A section added in

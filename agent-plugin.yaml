@@ -1,0 +1,16 @@
+schemaVersion: 1
+name: shelajev/blog-writer
+version: 1.2.0
+source:
+  repository: https://github.com/shelajev/blog-writer
+  tesslIdentity: jbaruch/blog-writer
+artifacts:
+  skills:
+    - id: blog-writer
+      path: skills/blog-writer
+    - id: cfp-abstract
+      path: skills/cfp-abstract
+    - id: create-personal-identity
+      path: skills/create-personal-identity
+    - id: create-corporate-identity
+      path: skills/create-corporate-identity

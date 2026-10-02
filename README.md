@@ -142,3 +142,32 @@ On first use, establish or select the shared identity root, then create or selec
 one writing identity. Clarification questions are asked one at a time with numbered options.
 Existing persona users may continue through the legacy fallback or migrate into a v1
 personal package under the shared root.
+
+## Oleg's fork: fresh Gemini audience review
+
+This fork includes a stateless Gemini review for public prose. It flags missing
+reader knowledge, motivation, and instructions as well as language issues. See
+[the review procedure](skills/blog-writer/references/fresh-reader.md).
+
+The fork also includes `agent-plugin.yaml` for ACR, retaining all four upstream
+skills and the author's identity workflow. Validate locally with `acr validate`.
+The workshop-pinned ACR v0.2.1 supports GitHub package sources; local-path
+installation requires a newer ACR build. Before publication, validate offline
+with `acr validate`; then verify installation from a committed fork revision
+and run `acr realize --agent claude-code --agent codex` and `acr check` in a
+disposable consumer project. After committing and publishing a versioned release, consumers
+can install `github:shelajev/blog-writer@<release-or-commit>` through ACR. No release
+has been published by this change. The workshop's existing `shelajev/acr-sbx-kit`
+provides ACR inside a sandbox; `--skills off` still permits project-local realized
+skills and prevents sharing the host skill store.
+
+The **Sync upstream** workflow checks `jbaruch/blog-writer` daily at 05:17 UTC
+and can run manually. It merges upstream into a branch from this fork's `main`,
+runs lint and script tests, then creates or refreshes one PR. Conflicts and failed
+checks stop the run for manual resolution. Enable Actions on the fork and allow
+GitHub Actions to create pull requests in repository Settings → Actions → General.
+No new token is required. GitHub's built-in token suppresses follow-on PR workflows,
+so the sync job runs its checks directly and does not claim those workflows ran.
+
+The inherited Tessl auto-publisher runs only in the upstream repository. This
+fork does not publish on merge; ACR distribution remains an explicit release step.

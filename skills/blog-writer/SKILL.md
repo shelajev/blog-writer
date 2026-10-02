@@ -10,6 +10,8 @@ description: >
   a blog post, revising blog content, turning a video transcript, meeting notes, or
   rough ideas into a blog, and continuing a blog series. Preserve the author's meaning,
   technical accuracy, and voice while identifying and rewriting formulaic prose.
+  Also review public announcements, documentation, tutorials, workshop instructions,
+  and release copy for audience comprehension using a fresh Gemini reader.
 ---
 
 # Blog Writer
@@ -29,6 +31,12 @@ stance, argument progression, and author-supplied wording under the preservation
 in `skills/blog-writer/references/voice-calibration.md`. Check it after each completed
 editing pass, including scanner-driven and corporate edits. Apply it to non-blog artifacts
 too, preserving their format and requested scope.
+
+**Fresh audience review.** Before delivering public-facing prose, execute
+`skills/blog-writer/references/fresh-reader.md`. Use Gemini with only the draft,
+reader-visible supporting material, and audience prerequisites. Apply this to both
+full-blog and scoped routes, and repeat after substantive revisions. Report an
+unavailable review explicitly; never imply it ran.
 
 ## Step 1 — Route the Assignment
 
