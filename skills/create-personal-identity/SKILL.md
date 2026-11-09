@@ -47,7 +47,10 @@ Use this approval loop for every consequential create or update:
    variation, off-voice moves, and durable bio facts. Keep explicit preferences separate
    from observed patterns; sample frequency is evidence, not a quota.
 4. Classify representative prose by writing mode and authorship. Route supported contiguous
-   passages through an `examples` resource.
+   passages through an `examples` resource. When sanitized, solely human-authored passages
+   are available, also create the optional `corpus` resource under the package contract.
+   Keep content type descriptive and classify rhetorical mode, register, language, and
+   privacy. An empty corpus is valid when the identity is intentionally tracking a gap.
 5. Mark a writing mode Unresolved when it lacks representative prose. Do not use these as
    prose evidence:
 
@@ -74,6 +77,11 @@ Read the existing v1 package and its provenance before reading new evidence. Pre
 guidance and source history. Identify which conclusions the new sources confirm, weaken,
 replace, or leave unresolved; never regenerate the package as if prior decisions did not
 exist. Stop on a non-v1 package; Step 2 owns the only supported older shape.
+
+When an outcome ledger is supplied, do not promote its entries automatically. Approval of
+assistant-assisted prose is assignment evidence, not authorship. Add a corpus passage only
+after the author confirms it was human-drafted and the passage meets the corpus privacy and
+provenance contract.
 
 Apply accepted changes through
 `skills/create-personal-identity/references/package-contract.md`. Keep the existing status

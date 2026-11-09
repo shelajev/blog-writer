@@ -168,6 +168,7 @@ def legacy_persona(path: Path) -> dict | None:
         ("voice", "voice.md"),
         ("composition", "framework.md"),
         ("examples", "examples.md"),
+        ("corpus", "corpus.jsonl"),
         ("bio", "bio.md"),
         ("legacy-product-context", "product.md"),
     ):

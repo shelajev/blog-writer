@@ -73,10 +73,14 @@ Substantial author-written passages supplied in the current conversation can qua
 Apply the same mode and authorship requirements; do not count an assistant draft as
 author-written evidence merely because the author approved it.
 
-Name the assignment mode before selecting evidence. Use a concrete mode such as failure
-story, analytical opinion, tutorial, announcement, or product explanation. Select two or
-three passages in the same mode. Use the nearest mode only when the research bank records
-the mismatch.
+Name the assignment content type, rhetorical mode, register, language, and visibility
+before selecting evidence. Content type remains open vocabulary: conference abstract,
+LinkedIn post, email, GitHub comment, failure story, tutorial, or another useful name.
+When the identity declares a `corpus` resource, read
+`skills/blog-writer/references/corpus-calibration.md` and run `select-calibration.py`.
+Select two or three passages matching rhetorical mode and register, preferably from
+different content types. Without a corpus, use same-mode examples under the existing
+manual evidence rules.
 
 For each passage record:
 
@@ -87,14 +91,21 @@ For each passage record:
 - the voice dimensions the passage demonstrates
 
 Set calibration readiness to `ready` only when two or three usable passages match the
-assignment mode. Set it to `unresolved` when the evidence is missing, inaccessible, has
-unknown authorship, or covers only a different mode. Name the missing evidence. Ask for suitable passages when personal voice matching is
+assignment's rhetorical mode and register. Set it to `unresolved` when the evidence is
+missing, inaccessible, has unknown authorship, or covers only a different mode. Name the
+missing evidence. Ask for suitable passages when personal voice matching is
 part of the requested work; continue a routine edit using available assignment evidence
 without a new approval gate. Keep `unresolved`; never infer readiness from identity approval.
 
-Record the mode, readiness, and passage inventory under `## Voice Calibration` in the
+Record the content type, rhetorical mode, register, readiness, and passage inventory under `## Voice Calibration` in the
 research memory bank. Do not copy whole published works into the bank. A locator plus the
 specific passage boundaries and analysis is enough.
+
+Use passages to compare voice functions, not to reproduce a form. Never turn a frequent
+opening, structure, ending, length, phrase, joke, punctuation rate, or device into a rule.
+Prefer contrasting content types, preserve assignment-backed departures, and name a
+meaningful structural difference the new piece should retain. Evaluate voice fidelity and
+originality separately.
 
 ## Compare the draft
 
@@ -155,7 +166,7 @@ The draft summary reports these states separately:
 - `Mechanical sweep`: `clean`, `findings`, `tool error`, or `not run`
 - `Manual anti-pattern review`: `complete`, `unresolved`, or `not run`
 - `Voice calibration`: `calibrated`, `unresolved`, or `not applicable`
-- `Assignment mode`: the selected mode
+- `Assignment content type`: the selected form, rhetorical mode, and register
 - `Calibration evidence`: each selected source, passage location, and authorship
 - `Paragraph continuity`: `pass`, `fixed`, `unresolved`, or `not applicable`
 

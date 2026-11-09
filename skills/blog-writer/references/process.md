@@ -55,7 +55,7 @@ Skip this section if no product context is configured.]
 [Phase 2: main idea sentence, CTA, series context, approved structure outline]
 
 ## Voice Calibration
-[Phase 2+: assignment mode, two or three representative passages and their authorship,
+[Phase 2+: assignment content type, rhetorical mode, register, two or three representative passages and their authorship,
 readiness, comparison notes, paragraph continuity result]
 
 ## Draft Notes
@@ -223,10 +223,18 @@ technical meat or the broader point as a natural aside.
 
 ### 2f: Voice Calibration Plan
 
-Name the assignment mode and apply `skills/blog-writer/references/voice-calibration.md`.
-Select two or three contiguous passages from that mode, record their authorship, and note
+Name the assignment content type, rhetorical mode, register, language, and visibility,
+then apply `skills/blog-writer/references/voice-calibration.md`. If the selected personal
+identity declares a `corpus` resource, read
+`skills/blog-writer/references/corpus-calibration.md` and run its selector. Select two or
+three contiguous passages, preferably from different content types, record their authorship, and note
 what each demonstrates across the five calibration dimensions. Store the result in the
 research memory bank.
+
+When a personal identity and outcome ledger are available, read
+`skills/blog-writer/references/writing-outcomes.md` and inspect its bounded recent selection
+for this rhetorical mode or content type. Use it to avoid repeating accepted shapes and to
+see coverage; never treat the ledger as authored voice evidence.
 
 If the identity has no usable matching prose, mark voice calibration unresolved. Ask the
 author for evidence, then continue only with that state visible. Do not substitute an
@@ -686,7 +694,7 @@ comprehension findings before delivery.
 Tell the author the file is ready for review. Also display a summary in conversation with
 word count, placeholder counts by type, open questions, mechanical sweep state, manual
 anti-pattern review state, author-preservation evidence, voice calibration state and
-evidence, assignment mode, and
+evidence, assignment content type, rhetorical mode, register, and
 paragraph continuity state. Report each state independently.
 
 ---
@@ -698,7 +706,7 @@ the post done.
 
 **If personal identity is selected, re-read its voice resource and selected calibration
 passages now.** Every time you enter Phase 4 or return after author feedback, re-read them
-and restate the assignment mode and calibration readiness. Long revision cycles are where
+and restate the assignment content type, rhetorical mode, register, and calibration readiness. Long revision cycles are where
 voice drift happens.
 
 **Draft is a file.** All revisions happen in `blog-draft-[slug].md` using the Edit tool.

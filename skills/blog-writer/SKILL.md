@@ -1,27 +1,25 @@
 ---
 name: blog-writer
 description: >
-  Write and revise developer blog posts, and humanize existing drafts using the AI
-  anti-pattern catalog, structural checks, and author voice calibration. Use when asked
-  for a "humanizer", "humanization pass", "humanisation pass", "humanize this",
-  "humanise this", "de-AI this", "remove AI slop", "remove AI tells", "anti-AI pass",
-  "make this sound less AI-generated", "less robotic", or "more natural" in a writing
-  or editing request, even when the user does not mention a blog. Also use for writing
-  a blog post, revising blog content, turning a video transcript, meeting notes, or
-  rough ideas into a blog, and continuing a blog series. Preserve the author's meaning,
-  technical accuracy, and voice while identifying and rewriting formulaic prose.
-  Also review public announcements, documentation, tutorials, workshop instructions,
-  and release copy for audience comprehension using a fresh Gemini reader.
+  Write and revise public or private prose in the author's voice, including blog posts,
+  abstracts, social posts, email, GitHub text, tutorials, announcements, and strategy
+  documents. Also humanize existing drafts using voice calibration, structural checks,
+  and the AI anti-pattern catalog. Use for "humanize this", "de-AI this", "remove AI
+  slop/tells", "less robotic", or "more natural" writing requests; for turning
+  transcripts, notes, or rough ideas into prose; and for continuing a series. Preserve
+  meaning, technical accuracy, format, and voice. Review public-facing prose for audience
+  comprehension with a fresh Gemini reader.
 ---
 
 # Blog Writer
 
 Process steps in order. Do not skip ahead.
 
-Write developer blog posts for practitioners who build things, break things, and have
-opinions about their tools. Compose the author's personal identity with an optional,
-explicitly selected corporate identity. Personal identity supplies expression; corporate
-identity supplies audience, terminology, evidence, positioning, and editorial constraints.
+Write across content types while preserving the artifact's own purpose and form. The full
+workflow below handles new developer blog posts; scoped and non-blog work follows the
+route in Step 1. Compose the author's personal identity with an optional, explicitly
+selected corporate identity. Personal identity supplies expression; corporate identity
+supplies audience, terminology, evidence, positioning, and editorial constraints.
 
 **Script invocation.** Run every script this skill calls through its interpreter: `bash`
 for a `.sh`, `python3` for a `.py`. Never invoke one by bare path.
@@ -181,13 +179,19 @@ Proceed immediately to Step 9.
 Lock the main idea, the CTA, and the section outline. `skills/blog-writer/references/process.md` Phase 2 has
 the main-idea template and the outline requirements.
 
-Name the assignment mode and select two or three usable passages written for that mode.
-Follow `skills/blog-writer/references/voice-calibration.md`. These do not pass the evidence
+Name the assignment content type, rhetorical mode, and register, then select two or three
+usable passages. When the personal identity declares a `corpus` resource, read
+`skills/blog-writer/references/corpus-calibration.md` and run its selector before manually
+searching examples. Follow `skills/blog-writer/references/voice-calibration.md`. These do not pass the evidence
 gate:
 
 - an approved identity
 - a list of devices
 - links without fetched prose
+
+Content type is descriptive rather than a template. Prefer calibration passages from
+different content types that share rhetorical mode and register. Corpus frequency never
+becomes a writing rule.
 
 Record voice calibration as unresolved when matching evidence is unavailable.
 
@@ -249,7 +253,8 @@ Six rules bind this step and Step 11:
 **Identity adherence.** When personal identity is selected, re-read its entry point, voice
 resource, and selected calibration passages before every writing action — before this
 draft, before every Step 11 revision, and before the anti-pattern rewrite voice-calibration
-check. Name the assignment mode, calibration readiness, and passages used. If corporate identity is
+check. Name the assignment content type, rhetorical mode, register, calibration readiness,
+and passages used. If corporate identity is
 selected, re-read its entry point and name its consequential requirements too.
 
 **Voice calibration adherence.** Follow `skills/blog-writer/references/voice-calibration.md`.
@@ -305,7 +310,7 @@ formal voice calibration may remain unresolved with its evidence gap stated.
 
 Proceed immediately to Step 12.
 
-## Step 12 — Record the Post's Shape
+## Step 12 — Record Shape and Outcome
 
 Append the finished post's skeleton to the shape history so the next post's audit 6 has
 something to compare against. Do not write the file yourself. Run:
@@ -325,5 +330,11 @@ Route on the exit code:
 - **Exit 1** — the history was refused and left untouched. Report the script's stderr diagnostic to the author.
 - Never work around a refusal by deleting the file.
 - **Exit 2** — report the diagnostic and stop.
+
+When a personal identity is selected, read
+`skills/blog-writer/references/writing-outcomes.md` and record the finished work under that
+persona. Classify contribution honestly: a publishable assistant draft approved by the
+author remains `assistant-assisted`; approval is not human authorship. Outcome recording
+does not modify the identity corpus or establish voice calibration.
 
 Finish here.

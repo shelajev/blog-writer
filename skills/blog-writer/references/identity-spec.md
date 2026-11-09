@@ -43,13 +43,18 @@ declared role remains significant even when paths repeat.
   are relative to the identity directory, and stay inside it.
 - `sources`: the required literal path `sources.md`.
 
-Useful personal roles include `voice`, `composition`, `examples`, and `bio`. Useful
+Useful personal roles include `voice`, `composition`, `examples`, `corpus`, and `bio`. Useful
 corporate roles include `brand`, `terminology`, `editorial-review`, and `product-context`.
 Roles are extensible lowercase kebab-case strings.
 
 An `examples` resource should identify representative prose by writing mode when the source
 material supports it. A URL or device summary may route the reader to evidence, but it is
 not prose evidence until the passage itself is read.
+
+A `corpus` resource is a private JSONL collection of sanitized, human-authored passages.
+It follows `skills/blog-writer/references/corpus-calibration.md`. Content type remains
+descriptive; rhetorical mode and register select evidence across forms. Corpus frequency
+is never writing guidance.
 
 ## Guidance strength
 

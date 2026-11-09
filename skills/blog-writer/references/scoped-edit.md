@@ -64,4 +64,8 @@ For edits, briefly identify consequential changes and where the protected functi
 Use concrete source/revision passages, not an assurance that the voice survived.
 Report the independent states from the voice-calibration reference, including retained
 scanner hits and unresolved evidence. Combine routine successes concisely; expand problems
-and material decisions. Finish here without blog-shape recording or publication bookkeeping.
+and material decisions. A routine edit ends without publication bookkeeping. When the
+author explicitly declares the artifact final or published and a selected personal identity
+and blog home are available, read `skills/blog-writer/references/writing-outcomes.md` and
+record the outcome under that persona. Do not record review-only work or infer publication
+from delivery. Finish without blog-shape recording.
