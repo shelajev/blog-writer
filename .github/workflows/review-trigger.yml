@@ -12,8 +12,7 @@ name: Trigger fleet policy review
 #     jbaruch/coding-policy. Create it with Actions: Read and write on jbaruch/coding-policy.
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  workflow_dispatch:
 
 permissions: {}
 
